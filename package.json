@@ -1,0 +1,39 @@
+{
+  "name": "jquery-search",
+  "version": "1.0.0",
+  "description": "An unified implementation of `find` and `addBack` for jQuery.",
+  "main": "src/jquery-search.js",
+  "scripts": {
+    "dev": "NODE_ENV=development webpack --progress --hide-modules --config=node_modules/laravel-mix/setup/webpack.config.js",
+    "dist": "npm install && npm run dev && npm run production",
+    "watch": "NODE_ENV=development webpack --watch --progress --hide-modules --config=node_modules/laravel-mix/setup/webpack.config.js",
+    "hot": "NODE_ENV=development webpack-dev-server --inline --hot --config=node_modules/laravel-mix/setup/webpack.config.js",
+    "production": "NODE_ENV=production webpack --progress --hide-modules --config=node_modules/laravel-mix/setup/webpack.config.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/eagostini/jquery-search.git"
+  },
+  "keywords": [
+    "jquery",
+    "plugin",
+    "search",
+    "find",
+    "addBack"
+  ],
+  "author": {
+    "name": "Eduardo Agostini",
+    "email": "edu.agostini@gmail.com"
+  },
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/eagostini/jquery-search/issues"
+  },
+  "homepage": "https://github.com/eagostini/jquery-search#readme",
+  "dependencies": {
+    "jquery": "^3.2.1"
+  },
+  "devDependencies": {
+    "laravel-mix": "^1.4.2"
+  }
+}
